@@ -1,0 +1,36 @@
+settings:
+  legacy:
+    force: false
+    interval: 0s
+schema:
+- name: /Users/carlos/private/go/src/go-challenge
+  path: /Users/carlos/private/go/src/go-challenge
+  env:
+    PORT: "0.0.0.0:5555"
+  commands:
+    clean:
+      status: true
+    vet:
+      status: true
+    fmt:
+      status: true
+    test:
+      status: true
+    generate:
+      status: true
+    install:
+      status: true
+    build:
+      status: true
+    run:
+      status: true
+  watcher:
+    extensions:
+    - go
+    paths:
+    - /
+    ignore:
+      paths:
+      - .git
+      - .realize
+      - vendor
